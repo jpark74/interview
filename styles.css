@@ -1,0 +1,205 @@
+/* Interview */
+
+* {
+	box-sizing: border-box;
+}
+
+html{
+	background-color: green;
+}
+
+
+h1{
+	font-family: 'Sigmar One', cursive;
+	font-size: 6em;
+	text-align: center;
+	margin-bottom: 3em;
+	cursor: pointer;
+}
+
+
+h3 {
+	font-family: 'Maven Pro', sans-serif;
+	padding-left: : 4em;
+	font-size: 1.25em;
+	color: white;
+	font-weight: 400;
+
+}
+
+h3:hover{
+	color: #fe4902; }
+
+
+body {
+	line-height: 1.25;
+	margin: 83px;
+    padding: 123px;
+	color: white;
+	border: 20px solid yellow;
+	
+}
+
+p{
+	padding-left: 4em;
+	font-family: 'Roboto Slab', serif;
+
+}
+
+section {
+	left: 0;
+    max-width: 40em;
+    transition: all 1s ease;
+    color: white;
+    max-width: 40em;
+    transition: all 0.5s ease;
+    filter: blur(3px);
+    scale: 0;
+    transform-origin: left;
+}
+
+
+section:nth-child(1) {
+	
+}
+section:nth-child(2) {
+}
+
+section:nth-child(3) {
+
+}
+
+section:hover{
+		filter: grayscale(0);
+		color: yellow;
+	transform: rotate(0) scale(2) translate(0);
+	align-content: center;
+	filter:blur(0);
+}
+
+}
+
+
+img:hover{
+	cursor: pointer;
+}
+
+.toggle p{
+	opacity: 0;
+	transition: all 1s;
+	height: 0;
+	transition-delay: 0.2s;
+	transform: translateX(-2em);
+}
+
+.show p{
+	opacity: 1;
+	height: 100%;
+	transform: translateX(0em);
+}
+
+.lemon img{
+	margin-top: 9em;
+	left:0%;
+	animation-name:moving-1;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	top: 70%;
+}
+
+
+.lemon2 img{
+	margin-top: 9em;
+	left:0%;
+	animation-name:moving-3;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+	top: 70%;
+}
+
+
+@keyframes moving-1{
+	from{
+		left:10%;
+	}
+
+	to{
+		left: 80%
+
+	}
+}
+
+@keyframes moving-3{
+	from{
+		left:80%;
+	}
+
+	to{
+		left: 15%
+
+	}
+}
+
+
+.shadow { 
+   color: white; 
+   font-family: 'Sigmar One', cursive;
+   text-shadow: 1px 1px yellow, 
+                2px 2px yellow, 
+                3px 3px yellow;
+   -webkit-transition: all 0.12s ease-out;
+   -moz-transition:    all 0.12s ease-out;
+   -ms-transition:     all 0.12s ease-out;
+   -o-transition:      all 0.12s ease-out;
+}
+.shadow:hover {
+   position: relative; 
+   top: -3px; 
+   left: -3px; 
+   text-shadow: 1px 1px #fe4902, 
+                2px 2px #fe4902, 
+                3px 3px #fe4902, 
+                4px 4px #fe4902, 
+                5px 5px #fe4902, 
+                6px 6px #fe4902;
+}
+
+
+.lemon-back{
+	position: absolute;
+	right: 5%;
+	z-index: 0;
+	transform: rotate(90deg);
+	animation-name:moving-2;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	transition: all 0.5s ease;
+	filter: blur(10px);
+}
+
+.lemon-back:hover{
+	filter: blur(0);
+}
+
+@keyframes moving-2{
+	from{
+		transform: rotate(90deg);
+	}
+
+	to{
+		transform: rotate(-45deg);
+
+	}
+}
+
+.lemon-sweat{
+  display: inline-block;
+  border: 5px solid yellow;
+  width: 50px;
+  height: 100px;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
